@@ -14,7 +14,7 @@ output application/json
   productsID: "12345",
   productName: "Atomic energy",
   productProvider: "India",
-  productDescription: "Atomic energy creater"
+  productDescription: "Atomic energy creater for first time"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
