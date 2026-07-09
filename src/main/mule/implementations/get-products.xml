@@ -12,9 +12,9 @@ output application/json
 ---
 {
   productsID: "12345",
-  productName: "Atomic energy",
+  productName: "Atomic energy super plant",
   productProvider: "India",
-  productDescription: "Atomic energy creater for first time in India"
+  productDescription: "Atomic energy creater"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
