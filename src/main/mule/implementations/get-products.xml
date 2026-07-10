@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-  productsID: "12345",
+  productsID: "12345ABCD",
   productName: "Atomic energy super plant",
   productProvider: "India, Australia",
   productDescription: "Atomic energy creater at economic rates"
