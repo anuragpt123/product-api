@@ -14,6 +14,7 @@
 		</munit:execution>
 		<munit:validation >
 			<logger level="INFO" doc:name="info log" doc:id="ecfc5695-d536-4fc6-bd42-625bff792487" message="#[payload]"/>
+			<munit-tools:assert doc:name="Assert payload not null" doc:id="c958b71d-bc2e-49ef-bf75-90a69bc66e85" />
 		</munit:validation>
 	</munit:test>
 
