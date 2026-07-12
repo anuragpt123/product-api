@@ -2,6 +2,10 @@ pipeline {
 
   agent any
 
+  tools{
+    mavem 'M3'
+  }
+
   stages {
     stage('Build') {
       steps {
