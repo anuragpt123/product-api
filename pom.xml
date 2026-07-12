@@ -6,7 +6,7 @@
 
 	<groupId>6b51a7a5-4bc2-41a6-bd30-1a4a21806135</groupId>
 	<artifactId>product-api-impl</artifactId>
-	<version>1.0.10</version>
+	<version>1.0.11</version>
 	<packaging>mule-application</packaging>
 
 	<name>product-api</name>
@@ -17,56 +17,47 @@
 
 		<app.runtime>4.9.5</app.runtime>
 		<mule.maven.plugin.version>4.8.0</mule.maven.plugin.version>
+		<munit.version>3.2.1</munit.version>
 	</properties>
-
-	<profiles>
-		<profile>
-			<id>test</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.mule.tools.maven</groupId>
-						<artifactId>mule-maven-plugin</artifactId>
-						<version>${mule.maven.plugin.version}</version>
-						<extensions>true</extensions>
-						<configuration>
-							<cloudhub2Deployment>
-								<uri>https://anypoint.mulesoft.com</uri>
-								<provider>MC</provider>
-								<businessGroupId>6b51a7a5-4bc2-41a6-bd30-1a4a21806135</businessGroupId>
-								<connectedAppClientId>e1ff626ac78a40a1b657be5d61051f2c</connectedAppClientId>
-								<connectedAppClientSecret>EfB56dcCFC1c478681BE9819d3b20Fc3</connectedAppClientSecret>
-								<connectedAppGrantType>client_credentials</connectedAppGrantType>
-								<environment>test</environment>
-								<applicationName>anu-test-product-api</applicationName>
-								<target>Cloudhub-US-East-2</target>
-								<muleVersion>4.9.5</muleVersion>
-								<releaseChannel>LTS</releaseChannel>
-								<javaVersion>17</javaVersion>
-								<replicas>1</replicas>
-								<vCores>0.1</vCores>
-								<deploymentSettings>
-									<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
-								</deploymentSettings>
-								<properties>
-									<http.port>8081</http.port>
-									<env>test</env>
-									<api.id>21011602</api.id>
-									<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-									<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
-									<anypoint.platform.base_uri>https://anypoint.mulesoft.com</anypoint.platform.base_uri>
-									<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
-								</properties>
-							</cloudhub2Deployment>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudhub2Deployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<provider>MC</provider>
+						<businessGroupId>6b51a7a5-4bc2-41a6-bd30-1a4a21806135</businessGroupId>
+						<connectedAppClientId>e1ff626ac78a40a1b657be5d61051f2c</connectedAppClientId>
+						<connectedAppClientSecret>EfB56dcCFC1c478681BE9819d3b20Fc3</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<environment>test</environment>
+						<applicationName>anu-test-product-api</applicationName>
+						<target>Cloudhub-US-East-2</target>
+						<muleVersion>4.9.5</muleVersion>
+						<releaseChannel>LTS</releaseChannel>
+						<javaVersion>17</javaVersion>
+						<replicas>1</replicas>
+						<vCores>0.1</vCores>
+						<deploymentSettings>
+							<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
+						</deploymentSettings>
+						<properties>
+							<http.port>8081</http.port>
+							<env>test</env>
+							<api.id>21011602</api.id>
+							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
+							<anypoint.platform.base_uri>https://anypoint.mulesoft.com</anypoint.platform.base_uri>
+							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
+						</properties>
+					</cloudhub2Deployment>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
