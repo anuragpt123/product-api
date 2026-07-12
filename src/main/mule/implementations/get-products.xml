@@ -16,7 +16,8 @@ output application/json
   productProvider: "India, Australia, Bahrain",
   productDescription: "Atomic energy creater at economic rates",
   productValidity: "life time",
-  demo: "demo"
+  demo: "demo",
+  new: "new"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
