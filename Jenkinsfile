@@ -2,7 +2,7 @@ pipeline {
 
   agent any
   
-  envirnment{
+  environment{
    ANYPOINT_CREDS = credentials('ANYPOINT_CREDENTIALS')
    
   }
