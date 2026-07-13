@@ -20,7 +20,7 @@ stages {
 
     stage('Test') {
       steps {
-       echo " ******** Mule test cases execution mocked 
+       echo " ******** Mule test cases execution mocked "
       }
     }
 
