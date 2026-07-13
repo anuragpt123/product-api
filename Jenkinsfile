@@ -6,6 +6,10 @@ pipeline {
     jdk 'java17'
   }
 
+  tools{
+    maven 'M3'
+  }
+
   stages {
     stage('Build') {
       steps {
