@@ -32,8 +32,8 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
 						<businessGroupId>6b51a7a5-4bc2-41a6-bd30-1a4a21806135</businessGroupId>
-						<connectedAppClientId>e1ff626ac78a40a1b657be5d61051f2c</connectedAppClientId>
-						<connectedAppClientSecret>EfB56dcCFC1c478681BE9819d3b20Fc3</connectedAppClientSecret>
+						<connectedAppClientId>${anypoint.username}</connectedAppClientId>
+						<connectedAppClientSecret>${anypoint.password}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>test</environment>
 						<applicationName>anu-test-product-api</applicationName>
